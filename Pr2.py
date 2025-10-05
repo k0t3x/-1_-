@@ -9,7 +9,7 @@ b = int(input('Введите длину списка: '))
 
 # Замер времени генерации списка
 start_gen = time.perf_counter()
-spisok = [random.randint(0, b) for i in range(b)]
+spisok = [random.randint(0, 10) for i in range(b)]
 gen_time = time.perf_counter() - start_gen
 
 def zamena(lst):
@@ -87,3 +87,4 @@ print(f"Расчет среднего: {avg_time:.8f} секунд")
 print("-" * 50)
 
 print(f"ОБЩЕЕ ВРЕМЯ ВЫПОЛНЕНИЯ: {total_time:.8f} секунд")
+
